@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+ <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="/demo-tailwind/script/index.js" defer></script>
+  <title>Frontend Mentor | Manage landing page</title>
+  <!-- swiper-js-cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.js"
+    integrity="sha512-h5Vv+n+z0eRnlJoUlWMZ4PLQv4JfaCVtgU9TtRjNYuNltS5QCqi4D4eZn4UkzZZuG2p4VBz3YIlsB7A2NVrbww=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- swiper-css-link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css"
+    integrity="sha512-N2IsWuKsBYYiHNYdaEuK4eaRJ0onfUG+cdZilndYaMEhUGQq/McsFU75q3N+jbJUNXm6O+K52DRrK+bSpBGj0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+<body class="">
+<nav class="relative container mx-auto p-5">
+<!--Flex container-->
+<div class="flex items-center justify-between">
+    <div class="px-2">
+<img src="/demo-tailwind/images/logo.svg" alt="manage logo">
+    </div>
+    <menu class="hidden md:flex space-x-6">
+        <li><a href="" class="hover:text-darkGrayishBlue">Pricing</a></li>
+        <li><a href="" class="hover:text-darkGrayishBlue">Product</a></li>
+        <li><a href="" class="hover:text-darkGrayishBlue">About Us</a></li>
+        <li><a href="" class="hover:text-darkGrayishBlue">Careers</a></li>
+        <li><a href="" class="hover:text-darkGrayishBlue">Community</a></li>
+    </menu>
+    <!--button-->
+    <a class="hidden md:block p-3 px-6 pt-2 bg-brightRed text-white rounded-full baseline hover:bg-brightRedLight">
+        Get Started
+    </a>
+    <!-- hamburger -->
+    <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+        <span class="hamburger-1"></span>
+        <span class="hamburger-2"></span>
+        <span class="hamburger-3"></span>
+    </button>
+</div>
+<div class="md:hidden">
+<div id="menu" class="absolute hidden flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+    <a href="" class="hover:text-darkGrayishBlue">Pricing</a>
+    <a href="" class="hover:text-darkGrayishBlue">Product</a>
+    <a href="" class="hover:text-darkGrayishBlue">About Us</a>
+    <a href="" class="hover:text-darkGrayishBlue">Careers</a>
+    <a href="" class="hover:text-darkGrayishBlue">Community</a>
+</div>
+</div>
+</nav>
+  
+
+<section id="hero">
+    <div id="cookie-div" class="cookie fixed bottom-1/3 flex flex-col px-4 py-8 space-y-4 bg-white  drop-shadow-md w-auto max-w-sm md:space-x-6 md:px-6 md:max-w-lg">
+        <strong class=" text-brightRed text-2xl md:text-3xl md:p-6 md">Cookie Consent</strong>
+        <p class="">This website uses cookies to enhance your browsing experience and provide personalized content. By continuing to
+            use this site, you consent to our cookies. To learn more about we use cookies and how you can manage them,
+            please review our <a href="" class="text-brightRed underline">Cookie Policy</a></p>
+        <div class="flex justify-between space-x-3 align-baseline">
+            <button class="cookie-btn w-1/2 bg-brightRed text-white rounded-full p-2 md:p-3">Accept</button>
+            <button class="cookie-btn w-1/2  border border-brightRed rounded-full p-2 md:p-3">Decline</button>
+        </div>
+    </div>
+    <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0 ">
+ <!--hero article-->
+ <div class=" flex flex-col mb-32 space-y-12 md:w-1/2">
+<h1 class="text-center max-w-md text-4xl font-bold md:text-5xl  md:text-left">
+  Bring everyone together to build better products.
+
+</h1>
+<p class=" text-center text-darkGrayishBlue md:text-left max-w-sm" >
+    Manage makes it simple for software teams to plan day-to-day
+    tasks while keeping the larger team goals in view.
+
+</p>
+<div class="flex justify-center md:justify-start">
+    <!--button-->
+    <a class=" p-3 px-6 pt-2 bg-brightRed text-white rounded-full baseline hover:bg-brightRedLight">
+        Get Started
+    </a>
+
+
+
+</div>
+ </div> 
+
+ <!--hero image-->
+ <div class="md:w-1\/2">
+<img src="/demo-tailwind/images/illustration-intro.svg" alt="illustration">
+ </div>
+    </div>
+</section>
+  
+  <!----Feature Section-->
+  <section id="features">
+<div class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row">
+    <div class="flex flex-col space-y-12  md:w-1/2">
+<h2 class="max-w-md font-bold text-center text-4xl md:text-left">
+    What’s different about Manage?
+
+</h2>
+<p class="max-w-sm text-darkGrayishBlue font-normal text-center md:text-left">
+Manage provides all the functionality your team needs, without
+the complexity. Our software is tailor-made for modern digital
+product teams.
+</p>
+    </div>
+<!---feature numbering-->
+    <div class="flex flex-col space-y-8 md:w-1/2">
+        <!-- 01-feature -->
+        <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">  
+
+            <div class="rounded-l-full  bg-brightRedSupLight md:bg-transparent">
+                <div class="flex items-center space-x-2">
+                    <div class="px-4 py-2 text-white rounded-full bg-brightRed md:py-1">
+                        01
+                    </div>
+                    <h3 class=" text-base font-bold md:mb-4 md:hidden">
+                        Track company-wide progress
+                    </h3>
+                </div>
+
+            </div>
+            <div class="">
+                <h3 class="hidden mb-4 text-lg font-bold md:block">
+                        Track company-wide progress
+                </h3>
+                <p class="text-darkGrayishBlue ">
+                    See how your day-to-day tasks fit into the wider vision. Go from
+                    tracking progress at the milestone level all the way done to the
+                    smallest of details. Never lose sight of the bigger picture again.
+                </p>
+            </div>
+        </div>
+
+        <!-- 02-feature -->
+        <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+        
+            <div class="rounded-l-full  bg-brightRedSupLight md:bg-transparent">
+                <div class="flex items-center space-x-2">
+                    <div class="px-4 py-2 text-white rounded-full bg-brightRed md:py-1">
+                        02
+                    </div>
+                    <h3 class=" text-base font-bold md:mb-4 md:hidden">
+                    Advanced built-in reports
+                    </h3>
+                </div>
+        
+            </div>
+            <div class="">
+                <h3 class="hidden mb-4 text-lg font-bold md:block">
+                    Advanced built-in reports
+                </h3>
+                <p class="text-darkGrayishBlue ">
+                Set internal delivery estimates and track progress toward company
+                goals. Our customisable dashboard helps you build out the reports
+                you need to keep key stakeholders informed.
+                </p>
+            </div>
+        </div>
+
+        <!-- 03-feature -->
+        <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+        
+            <div class="rounded-l-full  bg-brightRedSupLight md:bg-transparent">
+                <div class="flex items-center space-x-2">
+                    <div class="px-4 py-2 text-white rounded-full bg-brightRed md:py-1">
+                        03
+                    </div>
+                    <h3 class=" text-base font-bold md:mb-4 md:hidden">
+                        Everything you need in one place
+                    </h3>
+                </div>
+        
+            </div>
+            <div class="">
+                <h3 class="hidden mb-4 text-lg font-bold md:block">
+                        Everything you need in one place
+                </h3>
+                <p class="text-darkGrayishBlue ">
+                    Stop jumping from one service to another to communicate, store files,
+                    track tasks and share documents. Manage offers an all-in-one team
+                    productivity solution.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+  </section>
+
+  <!-- testimonial -->
+
+  <section id="testimonial">
+<div class="max-w-6xl px-5 mx-auto mt-32 text-center">
+<h2 class="text-center text-4xl font-bold">
+    What they’ve said
+</h2>
+
+<!--testimonial-container -->
+<div class="swiper">
+
+    <div class="flex swiper-wrapper mt-24 md:flex-row md:space-x-6">
+    
+        <!-- 01-testimonial -->
+        <div class="flex flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3 swiper-slide">
+            <img src="/demo-tailwind/images/avatar-anisha.png" alt="Anisha Avatar" class="w-16 -mt-14 mx-auto">
+            <h5 class="text-lg font-bold ">
+                Anisha Li
+            </h5>
+            <p class=" text-darkGrayishBlue text-sm">
+                “Manage has supercharged our team’s workflow. The ability to maintain
+                visibility on larger milestones at all times keeps everyone motivated.”
+            </p>
+    
+        </div>
+    
+    
+        <!-- 02-testimonial -->
+        <div class=" flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/3 swiper-slide">
+            <img src="/demo-tailwind/images/avatar-ali.png" alt="Anisha Avatar" class="w-16 -mt-14 mx-auto">
+            <h5 class="text-lg font-bold ">
+                Ali Bravo
+            </h5>
+            <p class=" text-darkGrayishBlue text-sm">
+                “We have been able to cancel so many other subscriptions since using
+                Manage. There is no more cross-channel confusion and everyone is much
+                more focused.”
+            </p>
+    
+        </div>
+    
+    
+    
+    
+        <!-- 03-testimonial -->
+        <div class=" flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:flex md:w-1/3 swiper-slide">
+            <img src="/demo-tailwind/images/avatar-richard.png" alt="Anisha Avatar" class="w-16 -mt-14 mx-auto">
+            <h5 class="text-lg font-bold ">
+                Richard watts
+            </h5>
+            <p class=" text-darkGrayishBlue text-sm">
+                “Manage allows us to provide structure and process. It keeps us organized
+                and focused. I can’t stop recommending them to everyone I talk to!”
+            </p>
+    
+        </div>
+    </div>
+    <div class="swiper-button-prev">
+        <i class="fa-solid fa-chevron-left"></i>
+    </div>
+    <div class="swiper-button-next">
+        <i class="fa-solid fa-chevron-right"></i>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+
+
+    <!--button-->
+<div class="my-16">
+    <a class=" p-3 px-6 pt-2 bg-brightRed text-white rounded-full baseline hover:bg-brightRedLight">
+        Get Started
+    </a>
+</div>
+
+</div>
+  </section>
+ <!-- cta-section -->
+  <section id="cta" class="bg-brightRed">
+    <div class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:py-12 md:flex-row  md:space-y-0">
+        <h2 class="text-5xl font-bold leading-tight text-white  text-center md:text-left md:max-w-xl md:text-4xl">
+        Simplify how your team works today.
+        </h2>
+        <div>
+            <!--button-->
+            <a class=" p-3 px-6 pt-2 bg-white shadow-2xl text-brightRed rounded-full baseline hover:bg-brightRedLight hover:text-white">
+                Get Started
+            </a>
+        </div>
+    </div>
+  </section>
+  <!-- footer-section -->
+  <footer id="footer" class="bg-veryDarkBlue">
+    <div class=" container flex flex-col-reverse justify-between px-6 py-10  mx-auto space-y-8 md:flex-row md:space-y-0 ">
+
+   
+    <small class="text-center text-white md:hidden"> built by <a href="" class="text-brightRed">Dev.Abu Ridwan</a> </small>
+    <small class=" text-white text-center md:hidden ">
+        Copyright &copy; 2023, All Rights Reserved
+    </small>
+<!-- logo-social-links -->
+       <div class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start ">
+        <div>
+            <img src="/demo-tailwind/images/logo-white.svg" alt="logo" class="h-8">
+        </div>
+<!-- social-links -->
+        <div class="flex justify-center space-x-4">
+
+            <a href="">
+                <img src="/demo-tailwind/images/icon-facebook.svg" alt="" class="h-8">
+            </a>
+            <a href="">
+                <img src="/demo-tailwind/images/icon-youtube.svg" alt="" class="h-8">
+            </a>
+            <a href="">
+                <img src="/demo-tailwind/images/icon-twitter.svg" alt="" class="h-8">
+            </a>
+            <a href="">
+                <img src="/demo-tailwind/images/icon-pinterest.svg" alt="" class="h-8">
+            </a>
+            <a href="">
+                <img src="/demo-tailwind/images/icon-instagram.svg" alt="" class="h-8">
+            </a>
+
+        </div>
+       </div>
+
+        <!-- links -->
+        <div class="flex justify-around space-x-32 ">
+            <div class="flex flex-col space-y-3 text-white">
+                <a href="" class="hover:text-brightRed">Home</a>
+                <a href="" class="hover:text-brightRed">Pricing</a>
+                <a href="" class="hover:text-brightRed">Products</a>
+                <a href="" class="hover:text-brightRed">About</a>
+            </div>
+
+            <div class="flex flex-col space-y-3 text-white">
+                <a href="" class="hover:text-brightRed">Careers</a>
+                <a href="" class="hover:text-brightRed">Community</a>
+                <a href="" class="hover:text-brightRed">Privacy Policy</a>
+            </div>
+        </div>
+        
+        
+        <!-- input -->
+        <div class="flex flex-col justify-between">
+            <form action="">
+                <div class="flex space-x-3">
+                    <input type="email" placeholder="Update in your inbox"
+                        class="flex-1 px-4  py-2 rounded-full focus:outline-none">
+                    <button
+                        class=" bg-brightRed rounded-full px-6 py-2 text-white hover:bg-white hover:text-white focus-within:outline-none">
+                        Go
+                    </button>
+                </div>
+        
+            </form>
+            <small class="hidden text-white md:block">
+                Copyright &copy; 2023, All Rights Reserved
+            </small>
+            <small class=" hidden text-white md:block"> built by <a href="" class="text-brightRed">Dev.Abu Ridwan</a> </small>
+        </div>
+    </div>
+
+  </footer>
+</body>
+    </html>
