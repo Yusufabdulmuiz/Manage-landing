@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+.hamburger-1,
+.hamburger-2,
+.hamburger-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: hsl(12, 88%, 69%);
+    width: 24px;
+    height: 2px;
+    border-radius: 5px;
+    transform: rotate(0);
+    transition: all 0.3s ease;
+}
+.hamburger-2 {
+    transform: translateY(7px);
+}
+.hamburger-3 {
+    transform: translateY(14px);
+}
+.open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+
+.open .hamburger-1 {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+.open .hamburger-2 {
+    display: none;
+}
+.open .hamburger-3 {
+        transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+.cookie {
+    left: -120%;
+    transition: all 0.5s;
+}
+
+.swiper-pagination-bullet{
+    opacity: 1;
+    background: gray;
+}
+.swiper-pagination-bullet-active {
+    background: hsl(12, 88%, 69%);
+}
