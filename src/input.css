@@ -45,7 +45,7 @@
 .cookie {
     bottom: -120%;
     transition: all 0.5s;
-z-index: 1000000999099000;
+    z-index: 1000000000;
 
 }
 
