@@ -40,7 +40,7 @@ cookieBtn.forEach(btn=>{
 
   btn.addEventListener('click', function () {
 
-      cookie.style.bottom= '-120%';
+      cookie.style.bottom = '-120%';
 
   })
 
