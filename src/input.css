@@ -43,14 +43,9 @@
         transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 .cookie {
-    left: -120%;
+    bottom: -120%;
     transition: all 0.5s;
+z-index: 1000000999099000;
+
 }
 
-.swiper-pagination-bullet{
-    opacity: 1;
-    background: gray;
-}
-.swiper-pagination-bullet-active {
-    background: hsl(12, 88%, 69%);
-}
