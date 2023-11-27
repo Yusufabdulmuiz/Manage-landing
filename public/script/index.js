@@ -24,7 +24,7 @@ menuBtn.addEventListener('click', ()=>{
 
     menu.classList.toggle('hidden')
 
-    body.classList.toggle('overflow-y-hidden')
+    body.classList.toggle('overflow-hidden')
 
 
 
