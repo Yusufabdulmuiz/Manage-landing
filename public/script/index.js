@@ -32,7 +32,7 @@ menuBtn.addEventListener('click', ()=>{
 
 window.onload = function (){
 
-  cookie.style.bottom = 0;
+  cookie.style.left = 0;
 
 }
 
@@ -40,7 +40,7 @@ cookieBtn.forEach(btn=>{
 
   btn.addEventListener('click', function () {
 
-      cookie.style.bottom = '-120%';
+      cookie.style.left = '-120%';
 
   })
 
