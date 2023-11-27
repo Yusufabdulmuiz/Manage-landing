@@ -43,7 +43,6 @@
         transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 .cookie {
-    bottom: -120%;
     transition: all 0.5s;
     z-index: 1000000000;
 
